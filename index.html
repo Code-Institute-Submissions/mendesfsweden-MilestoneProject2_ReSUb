@@ -11,11 +11,20 @@
 
 <body>
 	<h1 id="game-title">Flip and Match</h1>
+    <div class="overlay-text visible">
+    Click to Start!
+    </div>
+    <div id="game-over-text" class="overlay-text">
+    Game Over!
+    <span class="overlay-text-small">Click to Restart the Game</span>
+    </div>
+    <div id="win-text" class="overlay-text">
+    You Won!
+    <span class="overlay-text-small">Click to Restart the Game</span>
+    </div>
 	<div class="game-container">
 		<div class="game-info-container">
-			<div class="game-info">Time <span id="remaining-time">100</span>
-			</div>
-			<div class="game-info">Flips Left <span id="remaining-flips">25</span>
+			<div class="game-info">You have <span id="remaining-flips">25</span> flips left 
 			</div>
 		</div>
         <div class="card" data-framework="">
