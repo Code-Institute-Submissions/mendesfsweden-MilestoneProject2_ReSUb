@@ -10,94 +10,100 @@
 </head>
 
 <body>
-	<h1 id="game-title">Flip and Match</h1>
-    <div class="overlay-text visible">
+	<h1 class="game-name">Retro Mario Match</h1>
+    <div class="cover-text visible">
     Click to Start!
     </div>
-    <div id="game-over-text" class="overlay-text">
+    <div id="game-over-text" class="cover-text">
     Game Over!
-    <span class="overlay-text-small">Click to Restart the Game</span>
+    <span class="cover-text-small">Click to Restart the Game</span>
     </div>
-    <div id="win-text" class="overlay-text">
-    You Won!
-    <span class="overlay-text-small">Click to Restart the Game</span>
+    <div id="win-text" class="cover-text">
+    You Won! 
+    <span class="cover-text-small">Click to Restart the Game</span>
     </div>
 	<div class="game-container">
 		<div class="game-info-container">
-			<div class="game-info"> Time: <span id="remaining-time"></span> 60
+			<div class="game-info"> 
+            Time <span id="remaining-time">60</span> 
+			</div>
+            <div class="game-info"> 
+            Score <span id="score">100</span> 
 			</div>
 		</div>
-        <div class="card" data-framework="luigi">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="luigi">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="bowser">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
+
         </div>
-        <div class="card" data-framework="bowser">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
+
         </div>
-        <div class="card" data-framework="peach">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/peach-final.png" alt="peach">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="peach">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/peach-final.png" alt="peach">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="petey">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/petey-final.png" alt="petey">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="petey">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/petey-final.png" alt="petey">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="star">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/star.png" alt="star">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="star">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/star.png" alt="star">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="toad">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/toad-final.png" alt="toad">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="toad">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/toad-final.png" alt="toad">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="waluigi">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="waluigi">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="wario">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/wario-final.png" alt="wario">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="wario">
+        <div class="card">
+        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         <img class="card-front" src="assets/images/wario-final.png" alt="wario">
-        <img class="card-back" src="assets/images/card-back.png" alt="mario">
         </div>
-        <div class="card" data-framework="yoshi">
-        <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
+        <div class="card">
         <img class="card-back" src="assets/images/card-back.png" alt="mario">
+        <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
         </div>
-        <div class="card" data-framework="yoshi">
-        <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
+        <div class="card">
         <img class="card-back" src="assets/images/card-back.png" alt="mario">
+        <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
         </div>
         
 		</div>
