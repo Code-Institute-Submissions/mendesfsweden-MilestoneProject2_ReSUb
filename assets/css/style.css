@@ -38,6 +38,16 @@ body {
     margin-top: 3em;
 }
 
+.cover-text-small.btn{
+    width: 100px;
+    height: 75px;
+    font-family: 'Press Start 2P', serif ;
+    font-size: .2em;
+    background: #fafafa;
+    border: none;
+    
+}
+
 .cover-text.visible {
     display: flex;
     animation: overlay-grow 500ms forwards;
@@ -64,7 +74,6 @@ body {
     
 }
 
-
 .game-info-container{
     grid-column: 1 / -1;
     display: flex;
@@ -77,7 +86,6 @@ body {
     color: #fafafa;
     font-size: 1em;
     font-family: 'Press Start 2P', serif ;
-   
 }
 
 .card {
