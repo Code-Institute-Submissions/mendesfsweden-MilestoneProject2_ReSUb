@@ -118,6 +118,7 @@ class MarioMatch {
         //time stops counting down and it is reset to 60 (initial value) in the startGame()
         this.music.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
+        
     }
     win() {
         clearInterval(this.countDown);

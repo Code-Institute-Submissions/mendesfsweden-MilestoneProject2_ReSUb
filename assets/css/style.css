@@ -8,7 +8,7 @@ body {
     margin: 0;
     background:#FE0002;
 }
-
+/*-------------game title--------------*/
 .game-name {
     color: #fafafa;
     text-align: center;
@@ -16,6 +16,8 @@ body {
     font-size: 3em;
     padding-top: .2em;
 }
+
+/*-----------covers and buttons---------*/
 
 .cover-text{
     display: none;
@@ -39,31 +41,25 @@ body {
 }
 
 .cover-text-small.btn{
-    width: 100px;
+    width: 200px;
     height: 75px;
     font-family: 'Press Start 2P', serif ;
     font-size: .2em;
     background: #fafafa;
     border: none;
+    align-content: center;
     
 }
 
 .cover-text.visible {
     display: flex;
-    animation: overlay-grow 500ms forwards;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, .9);
+    font-size: 5em;
+    
 }
 
-@keyframes overlay-grow {
-    from {
-        background-color: rgba(0, 0, 0, 0);
-        font-size: 0;
-    }
-    to {
-        background-color: rgba(0, 0, 0, .9);
-        font-size: 5em;
-    }
-}
+/*---------game container and game info------------*/
 
 .game-container{
     display: grid;
@@ -87,6 +83,8 @@ body {
     font-size: 1em;
     font-family: 'Press Start 2P', serif ;
 }
+
+/*----------------------cards-----------------------*/
 
 .card {
     position: relative;
@@ -122,6 +120,7 @@ body {
     transform: rotateY(180deg);
 }
 
+/*-----------------media query-------------------*/
 
 @media (max-width: 992px) {
 .game-container {
