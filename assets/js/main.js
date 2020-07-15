@@ -28,7 +28,7 @@ class Music {
 
 class MarioMatch {
     constructor(totalTime, cards) {
-        this.cardsArray = cards;
+        this.cards = cards;
         this.totalTime = totalTime;
         /* above this comment are the properties of the object set from the constructor
         under the comment are all the properties set dinamically*/
@@ -56,10 +56,11 @@ class MarioMatch {
         this.timer.innerText = this.timeRemaining;
         this.scorer.innerText = this.totalScore;
         //reset both the score and time when a new game starts
+        
  
     }
     hideCards() {
-        this.cardsArray.forEach(card => {
+        this.cards.forEach(card => {
             card.classList.remove('flip');
         });
     }
@@ -76,7 +77,6 @@ class MarioMatch {
                 this.cardToCheck = card;
         }
     }
-
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -88,7 +88,7 @@ class MarioMatch {
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
-        if(this.matchedCards.length === this.cardsArray.length)
+        if(this.matchedCards.length === this.cards.length)
             this.win(); 
     }
     cardMisMatch(card1, card2) {
@@ -128,10 +128,10 @@ class MarioMatch {
     }
  
      shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) {
+        for(let i = this.cards.length - 1; i > 0; i--) {
             let randomIndex = Math.floor(Math.random() * (i+1));
-            this.cardsArray[randomIndex].style.order = i;
-            this.cardsArray[i].style.order = randomIndex;
+            this.cards[randomIndex].style.order = i;
+            this.cards[i].style.order = randomIndex;
         }
         /* Fisher and Yates shuffle algorithm - 1st we loop through the array backwards, 2st we create a random float 
         between 0 and 1 (not 1 inclusive) multiplied by i+1 - the number we get is rounded down (so we get a random integer), 
@@ -144,8 +144,10 @@ class MarioMatch {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
         // allows or not the user to flip the card - all 3 statements have to be true in order to flip the card 
     }
-    
+ 
 }
+
+
 
 function start() {
     let covers = Array.from(document.getElementsByClassName('cover-text'));
@@ -177,5 +179,4 @@ function start() {
 }
 
 start();
-
 

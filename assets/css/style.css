@@ -40,7 +40,7 @@ body {
     margin-top: 3em;
 }
 
-.cover-text-small.btn{
+.cover-text-small.btn {
     width: 200px;
     height: 75px;
     font-family: 'Press Start 2P', serif ;
@@ -48,7 +48,14 @@ body {
     background: #fafafa;
     border: none;
     align-content: center;
-    
+}
+
+
+
+.btn:hover{
+    border: 2px solid #fafafa;
+    color:#fafafa;
+    background-color: #000;
 }
 
 .cover-text.visible {
@@ -124,15 +131,13 @@ body {
 
 @media (max-width: 992px) {
 .game-container {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(4, auto);
     }
 
 .game-info {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-
 }
 
 
