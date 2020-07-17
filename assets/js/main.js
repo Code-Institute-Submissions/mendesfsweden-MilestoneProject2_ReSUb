@@ -150,21 +150,23 @@ class MarioMatch {
 
 
 function start() {
-    let covers = Array.from(document.getElementsByClassName('cover-text'));
-        // creates an array of the elements with a class name of "cover-text"
 
-    let cards = Array.from(document.getElementsByClassName('card'));
+    const btns = Array.from(document.querySelectorAll('div.cover-text button'))
+   
+    const cards = Array.from(document.getElementsByClassName('card'));
         // creates an array of the elements with a class name of "card"
 
-    let game = new MarioMatch(60, cards);
+    const game = new MarioMatch(5, cards);
         //creates instance of the MarioMatch object
 
-    covers.forEach(cover => {
-        cover.addEventListener('click', () => {
-            cover.classList.remove('visible');
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
             game.startGame();
-        });
-    });
+            btn.parentElement.classList.remove('visible')
+        })
+    })
+    
+
         /*loops through each element and on a click event it removes the class "visible" - 
         this happens when the game starts, when the user loses or when the user wins - the clicking event 
         also calls the startGame() function, initializing the game */
@@ -178,5 +180,5 @@ function start() {
     
 }
 
-start();
+document.addEventListener('DOMContentLoaded', start) 
 
