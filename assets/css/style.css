@@ -50,8 +50,6 @@ body {
     align-content: center;
 }
 
-
-
 .btn:hover{
     border: 2px solid #fafafa;
     color:#fafafa;
@@ -64,6 +62,10 @@ body {
     background-color: rgba(0, 0, 0, .9);
     font-size: 5em;
     
+}
+
+.btn-2{
+    font-family: 'Press Start 2P', serif ;
 }
 
 /*---------game container and game info------------*/

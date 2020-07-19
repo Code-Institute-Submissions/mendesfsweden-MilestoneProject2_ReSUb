@@ -24,6 +24,16 @@ class Music {
         this.gameOverAudio.play();
         //once the user loses, first the stopMusic() is called to pause the game song and only after the gameOverAudio() is called
     }
+    mute(){
+        this.gameSong.muted = true;
+        this.winSound.muted = true;
+        this.gameOverAudio.muted = true;
+    }
+    unmute(){
+        this.gameSong.muted = false;
+        this.winSound.muted = false;
+        this.gameOverAudio.muted = false;
+    }
 }
 
 class MarioMatch {
@@ -119,6 +129,7 @@ class MarioMatch {
         this.music.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
         
+        
     }
     win() {
         clearInterval(this.countDown);
@@ -144,6 +155,17 @@ class MarioMatch {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
         // allows or not the user to flip the card - all 3 statements have to be true in order to flip the card 
     }
+    restartGame() {
+        clearInterval(this.countDown);
+        this.music.stopMusic();
+        this.startGame();
+    }
+    muteMusic(){
+        this.music.mute();
+    }
+    unmuteMusic(){
+        this.music.unmute();
+    }
  
 }
 
@@ -156,7 +178,7 @@ function start() {
     const cards = Array.from(document.getElementsByClassName('card'));
         // creates an array of the elements with a class name of "card"
 
-    const game = new MarioMatch(5, cards);
+    const game = new MarioMatch(60, cards);
         //creates instance of the MarioMatch object
 
     btns.forEach(btn => {
@@ -171,13 +193,22 @@ function start() {
         this happens when the game starts, when the user loses or when the user wins - the clicking event 
         also calls the startGame() function, initializing the game */
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            game.flipCard(card);
-        });
-    });
+    cards.forEach(card => card.addEventListener('click', MarioMatch.prototype.flipCard.bind(game, card)));
         //loops through each element and on a click event it calls the flipcard() function, fliping the card clicked -
+    document.getElementById('restart').addEventListener('click', MarioMatch.prototype.restartGame.bind(game));
     
+    const muteBtn = document.getElementById('mute');
+
+    muteBtn.addEventListener('click', () => {
+        if (muteBtn.innerText === 'Mute') {
+            game.muteMusic();
+            muteBtn.innerText = 'Unmute';
+        }
+        else {
+            game.unmuteMusic();
+            muteBtn.innerText = 'Mute';
+        }
+    })
 }
 
 document.addEventListener('DOMContentLoaded', start) 
