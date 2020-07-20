@@ -42,7 +42,7 @@ class MarioMatch {
         this.totalTime = totalTime;
         /* above this comment are the properties of the object set from the constructor
         under the comment are all the properties set dinamically*/
-        this.timeRemaining = totalTime;
+        this.timeLeft = totalTime;
         this.timer = document.getElementById('remaining-time');
         this.scorer = document.getElementById('score');
         this.music = new Music();
@@ -50,20 +50,20 @@ class MarioMatch {
     startGame() {
         this.cardToCheck = null;
         this.totalScore = 1000;
-        this.timeRemaining = this.totalTime;
+        this.timeLeft = this.totalTime;
         this.matchedCards = [];
         /*all the cards matched throughout the game will be pushed into this array in order to check against the total cardsArray
         to see if there is a victory or not*/
-        this.busy = true;
+        this.noFlip = true;
         setTimeout(() => {
             this.music.startMusic();
             this.shuffleCards();
             this.countDown = this.startCountDown();
-            this.busy = false;
+            this.noFlip = false;
         }, 500);
         //setTimeout exists to create a smoother start of the game once the page is loaded or there is a game over/victory
         this.hideCards();
-        this.timer.innerText = this.timeRemaining;
+        this.timer.innerText = this.timeLeft;
         this.scorer.innerText = this.totalScore;
         //reset both the score and time when a new game starts
         
@@ -102,11 +102,11 @@ class MarioMatch {
             this.win(); 
     }
     cardMisMatch(card1, card2) {
-        this.busy = true;
+        this.noFlip = true;
         setTimeout(() => {
             card1.classList.remove('flip');
             card2.classList.remove('flip');
-            this.busy = false;
+            this.noFlip = false;
         }, 750);
     }
 
@@ -115,9 +115,9 @@ class MarioMatch {
     }
     startCountDown() {
         return setInterval(() => {
-            this.timeRemaining--;
-            this.timer.innerText = this.timeRemaining;
-            if(this.timeRemaining === 0)
+            this.timeLeft--;
+            this.timer.innerText = this.timeLeft;
+            if(this.timeLeft === 0)
                 this.gameOver();
         }, 1000);
         /* this makes the function be called every 1000 miliseconds (1 second), since the user has 60 sec to finish to game,
@@ -152,7 +152,7 @@ class MarioMatch {
 
     canFlipCard(card) {
         
-        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+        return !this.noFlip && !this.matchedCards.includes(card) && card !== this.cardToCheck;
         // allows or not the user to flip the card - all 3 statements have to be true in order to flip the card 
     }
     restartGame() {
