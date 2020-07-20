@@ -20,6 +20,10 @@ The user is able to restart the game at any moment as well as disable/enable the
 The remaining playing time and score are visible at all times. 
 Once the user loses or wins the game there are buttons available to restart the game. 
 
+## Features Left To Implement
+
+Create different dificulty levels. 
+
 ## Wireframes
 The following wireframes for this projects were developed with <a href="https://www.figma.com/">Figma</a>:
 
