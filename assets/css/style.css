@@ -65,7 +65,10 @@ body {
 }
 
 .btn-2{
+    width: 100px;
+    height: 25px;
     font-family: 'Press Start 2P', serif ;
+    font-size: .7em;
 }
 
 /*---------game container and game info------------*/
@@ -133,10 +136,11 @@ body {
 
 @media (max-width: 992px) {
 .game-container {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(2, auto);
+        
     }
 
-.game-info {
+.game-info-container {
     flex-direction: column;
     align-items: center;
 }
