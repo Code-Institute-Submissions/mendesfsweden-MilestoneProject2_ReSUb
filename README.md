@@ -23,6 +23,8 @@ Once the user loses or wins the game there are buttons available to restart the 
 ## Wireframes
 The following wireframes for this projects were developed with <a href="https://www.figma.com/">Figma</a>:
 
+<a href="https://github.com/mendesfsweden/MilestoneProject2/blob/master/assets/mockups/Desktop.pdf">Desktop Version</a><br>
+<a href="https://github.com/mendesfsweden/MilestoneProject2/blob/master/assets/mockups/Mobile.pdf">Mobile Version</a>
 
 
 ## Deployment
