@@ -2,7 +2,7 @@
 
 ### MS2 -Interactive Frontend Development - Code Institute
 
-This project a memory card game. The idea is that the user will match all the card pairs in order to finish the game. There is a time limit of 60 seconds and a score of 1000 points to which every click deducts 20 points. 
+This project a memory card Super Mario theme based. The idea is that the user will match all the card pairs in order to finish the game. There is a time limit of 60 seconds and a score of 1000 points to which every click deducts 20 points. 
 
 ## Demo
 
@@ -26,6 +26,9 @@ The following wireframes for this projects were developed with <a href="https://
 <a href="https://github.com/mendesfsweden/MilestoneProject2/blob/master/assets/mockups/Desktop.pdf">Desktop Version</a><br>
 <a href="https://github.com/mendesfsweden/MilestoneProject2/blob/master/assets/mockups/Mobile.pdf">Mobile Version</a>
 
+## Testing
+
+This project was tested on Chrome, Safari, Internet Explorer, iOS devices (iPhone Xs and Ipad) and Android. All functionalities work as expected.
 
 ## Deployment
  
