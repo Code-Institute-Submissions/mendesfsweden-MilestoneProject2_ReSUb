@@ -12,7 +12,7 @@ Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for 
 
 ## Technologies Used
 
-This project was developed usig pure HTML, CSS and JavaScript. No external libraries were used. 
+This project was developed using pure HTML, CSS and JavaScript. No external libraries were used. 
   
 ## Features
 
@@ -37,4 +37,4 @@ All images are from the free stock image library <a href="https://www.pngguru.co
 
 ### Acknowledgements
 
-Retro Mario Match was inspired on this GitHub repository<a href="https://github.com/portexe/Mix-Or-Match">Link</a>.
+Retro Mario Match was inspired on this GitHub repository <a href="https://github.com/portexe/Mix-Or-Match">Link</a>.
