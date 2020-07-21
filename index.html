@@ -2,118 +2,112 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-	<title>Memory Card Game</title>
+    <title>Retro Mario Match</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-	<h1 class="game-name">Retro Mario Match</h1>
-	<div class="cover-text visible">
-		<span class="cover-text-small">Test you memory and find the pairs. You have 60 seconds!</span>
-		<button class="cover-text-small btn">Start</button>
-	</div>
-	<div id="game-over-text" class="cover-text">
-		Game Over! <span class="cover-text-small"></span>
-		<button class="cover-text-small btn">Restart</button>
-	</div>
-	<div id="win-text" class="cover-text">
-		You Won! <span class="cover-text-small"></span>
-		<button class="cover-text-small btn">Restart</button>
-	</div>
-	<div class="game-container">
-		<div class="game-info-container">
-			<div class="game-info">
-				Time <span id="remaining-time"> 60</span>
-			</div>
+    <h1 class="game-name">Retro Mario Match</h1>
+    <div class="cover-text visible">
+        <span class="cover-text-small">Test you memory and find the pairs. You have 60 seconds!</span>
+        <button class="cover-text-small btn">Start</button>
+    </div>
+    <div id="game-over-text" class="cover-text">
+        <span class="cover-text-small">Game Over!</span>
+        <button class="cover-text-small btn">Restart</button>
+    </div>
+    <div id="win-text" class="cover-text">
+        <span class="cover-text-small">You Won!</span>
+        <button class="cover-text-small btn">Restart</button>
+    </div>
+    <div class="game-container">
+        <div class="game-info-container">
             <div class="game-info">
-				Score <span id="score"> 1000</span>
-			</div>
-            <div class="game-info">
-            <button id="restart" class="btn btn-2">Restart</button>
-            <button id="mute" class="btn btn-2">Mute</button>
+                Time <span id="remaining-time"> 60</span>
             </div>
-		</div>
-		<div class="card">
-			<img class="card-back" src="assets/images/card-back.png" alt="mario">
-			<img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
+            <div class="game-info">
+                Score <span id="score"> 1000</span>
+            </div>
+            <div class="game-info">
+                <button id="restart" class="btn btn-2">Restart</button>
+                <button id="mute" class="btn btn-2">Mute</button>
+            </div>
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
-
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/luigi-final.png" alt="luigi">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
-
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/peach-final.png" alt="peach">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/bowser-final.png" alt="bowser">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/peach-final.png" alt="peach">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/peach-final.png" alt="peach">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/petey-final.png" alt="petey">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/peach-final.png" alt="peach">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/petey-final.png" alt="petey">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/petey-final.png" alt="petey">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/star.png" alt="star">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/petey-final.png" alt="petey">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/star.png" alt="star">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/star.png" alt="star">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/toad-final.png" alt="toad">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/star.png" alt="star">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/toad-final.png" alt="toad">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/toad-final.png" alt="toad">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/toad-final.png" alt="toad">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/wario-final.png" alt="wario">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/waluigi-final.png" alt="waluigi">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/wario-final.png" alt="wario">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/wario-final.png" alt="wario">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/wario-final.png" alt="wario">
         </div>
-			<div class="card">
-				<img class="card-back" src="assets/images/card-back.png" alt="mario">
-				<img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
         </div>
-
-</div>
-
-
-
+        <div class="card">
+            <img class="card-back" src="assets/images/card-back.png" alt="mario">
+            <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
+        </div>
+    </div>
 </body>
 </html>
