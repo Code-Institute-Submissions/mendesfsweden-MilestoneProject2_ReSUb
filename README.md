@@ -8,7 +8,7 @@ This project a memory card Super Mario theme based. The idea is that the user wi
 
 Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for a live demo version of this project.
 
-<img src="" width="1200" height="400">
+<img src="assets/images/demo.png" width="1200" height="400">
 
 ## Technologies Used
 
