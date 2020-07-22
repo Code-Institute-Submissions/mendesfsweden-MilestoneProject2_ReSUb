@@ -47,4 +47,4 @@ All images are from the free stock image library <a href="https://www.pngguru.co
 
 ### Acknowledgements
 
-Retro Mario Match was inspired on this GitHub repository <a href="https://github.com/portexe/Mix-Or-Match">Link</a>.
+Retro Mario Match was inspired on this GitHub repository <a href="https://github.com/portexe/Mix-Or-Match" target="_blank">link</a>.
