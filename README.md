@@ -40,6 +40,11 @@ The following wireframes for this projects were developed with <a href="https://
 This project was tested on Chrome, Safari, Edge, Brave, iOS devices (iPhone Xs and Ipad) and Android. All functionalities work as expected.
 It does not work properly on Internet Explorer.
 
+#### HTML/CSS Validation
+
+<a href="https://validator.w3.org/" target="_blank">W3C HTML Validator:<a/> Used it to check the site's HTML document markup validity and it's functionality.<br> 
+<a href="https://jigsaw.w3.org/css-validator/" target="_blank">W3C CSS Validator:<a/> Used it to check the site's CSS document markup validity and it's functionality. 
+
 ## Deployment
  
 The project is hosted at GitHub, directly from the master branch. For that reason, any new changes committed will be deployed automatically.
