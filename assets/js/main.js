@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', start)
+
 class Music {
     constructor() {
         this.gameSound = new Audio('assets/audio/game-song.mp3');
@@ -6,13 +8,13 @@ class Music {
     }
 
     /**
-     * play game song
+     * Play game sound
      */
     startMusic() {
         this.gameSound.play();
     }
     /**
-     * Pauses the song and set 
+     * Pauses the sound and set 
      */
     stopMusic() {
         this.gameSound.pause();
@@ -45,6 +47,8 @@ class Music {
 
 /**
  * MarioMatch contains all the game logic
+ * The game requires the user to match all
+ * the cards within the total time specificied 
  */
 class MarioMatch {
     constructor(totalTime, cards) {
@@ -60,7 +64,7 @@ class MarioMatch {
         this.cardToCheck = null;
         this.totalScore = 1000;
         this.timeLeft = this.totalTime;
-         /*all the cards matched throughout the game will be pushed into 
+        /*all the cards matched throughout the game will be pushed into 
         this array in order to check against the total cardsArray
         to see if there is a victory or not*/
         this.matchedCards = [];
@@ -121,6 +125,11 @@ class MarioMatch {
         return card.getElementsByClassName('card-front')[0].src;
     }
 
+    /**
+     * Starts a new job that repeats itself every second
+     * and updates the timeLeft property
+     * @returns the token associated with the job
+     */
     startCountDown() {
         return setInterval(() => {
             this.timeLeft--;
@@ -128,8 +137,6 @@ class MarioMatch {
             if (this.timeLeft === 0)
                 this.gameOver();
         }, 1000);
-        /* this makes the function be called every 1000 miliseconds (1 second), since the user has 60 sec to finish to game,
-        once the countDown reaches 0 we check for game over and call the gameOver()*/
     }
 
     gameOver() {
@@ -145,18 +152,16 @@ class MarioMatch {
         this.music.playWinSound();
         document.getElementById('win-text').classList.add('visible');
     }
-
+    /**
+     * Shuffles the cards using the 
+     * Fisher and Yates algorithm 
+     */
     shuffleCards() {
-        //loop through the array backwards due performance 
         for (let i = this.cards.length - 1; i > 0; i--) {
             const randomIndex = Math.floor(Math.random() * (i + 1));
             this.cards[randomIndex].style.order = i;
             this.cards[i].style.order = randomIndex;
         }
-        /* Fisher and Yates shuffle algorithm - 1st we loop through the array backwards, 2st we create a random float 
-        between 0 and 1 (not 1 inclusive) multiplied by i+1 - the number we get is rounded down (so we get a random integer), 
-        3rd as we are using css grid we are using the order css grid property therefore we are not shuffling the array itself
-         but instead shuffling the order of the cards the way it's being displayed*/
     }
 
     /**
@@ -165,9 +170,6 @@ class MarioMatch {
      * @returns {boolean} tells if the card can be flipped or not
      */
     canFlip(card) {
-        /* Includes(card) call comes last due to effectiveness.
-        It verifies first the other two conditions that are faster
-        to check*/ 
         return !(this.flipping || card === this.cardToCheck || this.matchedCards.includes(card));
     }
 
@@ -186,16 +188,15 @@ class MarioMatch {
         this.music.unmute();
     }
 }
-
+/**
+ * Game entry point
+ */
 function start() {
-
     const btns = Array.from(document.querySelectorAll('div.cover-text button'))
 
     const cards = Array.from(document.getElementsByClassName('card'));
-    // creates an array of the elements with a class name of "card"
 
     const game = new MarioMatch(60, cards);
-    //creates instance of the MarioMatch object
 
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -204,12 +205,8 @@ function start() {
         })
     })
 
-    /*loops through each element and on a click event it removes the class "visible" - 
-    this happens when the game starts, when the user loses or when the user wins - the clicking event 
-    also calls the startGame() function, initializing the game */
-
     cards.forEach(card => card.addEventListener('click', MarioMatch.prototype.flip.bind(game, card)));
-    //loops through each element and on a click event it calls the flipcard() function, fliping the card clicked -
+
     document.getElementById('restart').addEventListener('click', MarioMatch.prototype.restartGame.bind(game));
 
     const muteBtn = document.getElementById('mute');
@@ -225,5 +222,3 @@ function start() {
         }
     })
 }
-
-document.addEventListener('DOMContentLoaded', start)

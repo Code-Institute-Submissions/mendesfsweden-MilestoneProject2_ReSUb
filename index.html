@@ -6,7 +6,7 @@
 
     <title>Retro Mario Match</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
+    
 </head>
 
 <body>
@@ -26,10 +26,10 @@
     <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
-                Time <span id="remaining-time"> 60</span>
+                Time <span id="remaining-time" class="time-counter">60</span>
             </div>
             <div class="game-info">
-                Score <span id="score"> 1000</span>
+                Score <span id="score" class="score-counter"> 1000</span>
             </div>
             <div class="game-info">
                 <button id="restart" class="btn btn-2">Restart</button>
@@ -109,5 +109,6 @@
             <img class="card-front" src="assets/images/yoshi-final.png" alt="yoshi">
         </div>
     </div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
