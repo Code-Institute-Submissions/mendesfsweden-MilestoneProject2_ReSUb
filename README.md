@@ -8,7 +8,7 @@ This project a memory card Super Mario theme based. The idea is that the user wi
 
 Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for a live demo version of this project.
 
-<img src="assets/images/demo.png" width="1200" height="400">
+<img src="assets/images/demo.png" width="1000" height="400">
 
 ## Technologies Used
 
@@ -32,7 +32,8 @@ The following wireframes for this projects were developed with <a href="https://
 
 ## Testing
 
-This project was tested on Chrome, Safari, Internet Explorer, iOS devices (iPhone Xs and Ipad) and Android. All functionalities work as expected.
+This project was tested on Chrome, Safari, Edge, Brave, iOS devices (iPhone Xs and Ipad) and Android. All functionalities work as expected.
+It does not work properly on Internet Explorer.
 
 ## Deployment
  
