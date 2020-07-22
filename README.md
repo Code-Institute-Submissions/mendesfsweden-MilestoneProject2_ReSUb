@@ -12,7 +12,12 @@ Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for 
 
 ## Technologies Used
 
-This project was developed using pure HTML, CSS and JavaScript. No external libraries were used. 
+<ul>
+  <li>HTML - was used create the website structure</li>
+  <li>CSS - was used to style the HTML</li>
+  <li>JavaScript - was used for the website interactiveness</li>
+  <li>Figma - was used to create the wireframes</li>
+</ul>
   
 ## Features
 
