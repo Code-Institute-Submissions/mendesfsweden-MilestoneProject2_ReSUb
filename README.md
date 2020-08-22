@@ -12,9 +12,9 @@ Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for 
 
 ## User Experience (UX)
 
-  ..* User Stories
+  * User Stories
   
-    ..* First Time User Goals
+    * First Time User Goals
         
         a. As a First Time User, i want to easily understand the purpose of the game.
         b. As a First Time User, i want to easily understand how to start the game.
