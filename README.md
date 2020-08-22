@@ -16,12 +16,14 @@ Click <a href="https://mendesfsweden.github.io/MilestoneProject2/">here</a> for 
   
     * First Time User Goals
         
-        ..a. As a First Time User, i want to easily understand the purpose of the game.
-        ..b. As a First Time User, i want to easily understand how to start the game.
-        ..c. As a First Time User, i want to be able to restart the game at any giver moment.
-        ..d. As a First Time User, i want to have access to the time a have left to complete the game.
-        ..e. As a First Time User, i want to have access to the score at all times. 
-        ..f. As a First Time User, i want to be able to mute/unmute the sound in the game. 
+       <ol start="a">
+         <li>As a First Time User, i want to easily understand the purpose of the game.</li>
+         <li>As a First Time User, i want to easily understand how to start the game.</li>
+         <li>As a First Time User, i want to be able to restart the game at any giver moment.</li>
+         <li>As a First Time User, i want to have access to the time a have left to complete the game.</li>
+         <li>As a First Time User, i want to have access to the score at all times.</li>
+         <li>As a First Time User, i want to be able to mute/unmute the sound in the game.</li>
+       </ol>
     
 
 Focus on providing the user a way to train his/her memory skills by playing a memory card game. The project is easy to navigate through and it has a simple and attractive layout, as well as an option to listen (or not) to the well known super mario soundtrack song.
