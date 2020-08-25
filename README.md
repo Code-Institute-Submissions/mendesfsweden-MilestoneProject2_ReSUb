@@ -110,8 +110,9 @@ The two services used to validate the code in this project and to ensure there w
 
 ### Known Bugs
 
--   The Safari Browser does not support some of the functionalities of the game. Once the game starts all the cards are faced up.
--   Tested the game using the Chrome browser as an alternative to the Safari browser on the iOS devices - iPhone XS, iPad and MacbookAir - and only on the MacBookAir the game ran without any issues.
+-   The Safari and Internet Explorer Browsers does not support some of the functionalities of the game. Once the game starts all the cards are faced up.
+-   Tested the game using the Chrome browser as an alternative to the Safari browser on the iOS devices - iPhone XS, iPad and MacbookAir - and only on the MacBookAir the game ran without any issues. 
+        Conclusion: the bug found occurs on the iPhone XS and Ipad no matter which browser is used (Safari, Chrome).
 -   On smaller screens, the Win and Game-Over screens cover the score making it impossible for the user to see their final score. 
 
 ## Deployment
