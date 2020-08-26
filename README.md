@@ -62,7 +62,7 @@ This project is a memory card game Super Mario theme based. The idea is that the
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Figma:](https://figma.com/)
-    - Figma was used to create the [wireframes](https://figma.com/) for this project.
+    - Figma was used to create the wireframes for this project.
 
 ## Testing
 
