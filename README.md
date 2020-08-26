@@ -75,38 +75,36 @@ The two services used to validate the code in this project and to ensure there w
 
 -   #### User Goals
 
-    1. As a User, I want to easily understand the goal of the game.
-
-        1. Once the site is loaded, the user is presented with the instructions and rules of the game.
+    1.  As a User, I want to easily understand the goal of the game.
         
-    2. As a User, i want to easily understand how to start the game.
+        1. Once the site is loaded, the user is presented with the instructions and rules of the game.
     
+    1. As a User, i want to easily understand how to start the game.
+        
         1. Once the site is loaded, a "Start" button in presented to the user.
-
-    3. As a User, i want to be able to restart the game at any giver moment.
     
+    1. As a User, i want to be able to restart the game at any giver moment.
+        
         1. While playing, a "Restart" button is available to the user and it is located on the top right above the playing area. 
         2. The user can restart the game upon a loss or a victory by pressing the "Restart" available on both the Win and Game-Over screens. 
-
-
-    4. As a User, i want to have access to the time i have left to complete the game.
     
+    1. As a User, i want to have access to the time i have left to complete the game.
+        
         1. The user has access to the time left to play. A timer is located on the top left the playing area.
-        
-    5. As a User, i want to have access to my score.
     
+    1.  As a User, i want to have access to my score.
+        
         1. The user has access to the current score. The score counter is located on the top of the playing area.
-        
-    6. As a User, i want to be able to mute/unmute the sound in the game.
     
+    1. As a User, i want to be able to mute/unmute the sound in the game.
+        
         1. The user can mute/unmute the sound by pressing the "mute/unmute" button (shows "mute" if the sound is ON, shows "unmute" if the sound is OFF) located on the top right of the playing area.
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, Brave and Safari browsers.
--   The website was viewed on a variety of devices such as MacBookAir, Huawei P30, Iphone XS and Ipad.
--   A large amount of testing was done to ensure that all the functionalities worked properly.
--   Friends and family members were asked to test the game in order to point out any bugs and/or user experience issues.
+-   The project was tested on the following browsers: Google Chrome, Internet Explorer, Microsoft Edge, Brave and Safari.
+-   The project was tested on the following devices: MacBookAir, Huawei P30, Iphone XS and Ipad.
+-   Retro Mario Match was also tested by friends and family to obtain User feedback in order to detected any potencial issues regarding the game functionality and to improve User Experience.
 
 ### Known Bugs
 
@@ -119,49 +117,36 @@ The two services used to validate the code in this project and to ensure there w
 
 ### GitHub Pages
 
-The project was deployed to GitHub Pages using the following steps...
+I used the following procedure to deploy my project to GitHub pages: 
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+-  Logged in to Github and opened the repository pages.
+-  Accessed the "Settings" and scrolled down to the source field. Then, changed the "Branch" to Master instead of "None". 
+-  The page was automatically reloaded and by scrolling down to the "GitHub Pages" section I could verify that the project was published.
 
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+Forking the GitHub repository allows other developers to make a copy and work on it without changing the original. As a developer, you can fork a repository as follows:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+-  Access the repository and click on "Settings". Use the "Fork" button, and a copy of the original repository will be created in your own account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+To make a local Clone, do the following:
+
+-  Open the repository and click on the green button saying "Code". By clicking on it a dropdown menu reveals the "Clone with HTTPS" link, which can then be copied.
+-  Open Git Bash and change the directory to the desired working location for the clone. After that, use the `git clone` command and paste the link that was copied ealier. 
+
+Below is an example of what is seen on screen when the clone is being created:
+
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/USERNAME/REPOSITORY
 > Cloning into `CI-Clone`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
 ```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
 ## Credits
 
