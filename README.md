@@ -127,7 +127,7 @@ I used the following procedure to deploy my project to GitHub pages:
 
 Forking the GitHub repository allows other developers to make a copy and work on it without changing the original. As a developer, you can fork a repository as follows:
 
--  Access the repository and click on "Settings". Use the "Fork" button, and a copy of the original repository will be created in your own account.
+-  Access the repository and click on the "Fork" button(located at the top right corner of the page), and a copy of the original repository will be created in your own account.
 
 ### Making a Local Clone
 
