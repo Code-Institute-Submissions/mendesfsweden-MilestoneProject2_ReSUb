@@ -14,12 +14,12 @@ This project is a memory card game Super Mario theme based. The idea is that the
     
     -   #### User Goals
 
-        1. As a User, i want to easily understand the goal of the game.
-        2. As a User, i want to easily understand how to start the game.
-        3. As a User, i want to be able to restart the game at any giver moment.
-        4. As a User, i want to have access to the time i have left to complete the game.
-        5. As a User, i want to have access to my score.
-        6. As a User, i want to be able to mute/unmute the sound in the game.
+        1. As a User, I want to easily understand the goal of the game.
+        2. As a User, I want to easily understand how to start the game.
+        3. As a User, I want to be able to restart the game at any giver moment.
+        4. As a User, I want to have access to the time i have left to complete the game.
+        5. As a User, I want to have access to my score.
+        6. As a User, I want to be able to mute/unmute the sound in the game.
         
 -   ### Design
     -   #### Colour Scheme
@@ -79,24 +79,24 @@ The two services used to validate the code in this project and to ensure there w
         
         1. Once the site is loaded, the user is presented with the instructions and rules of the game.
     
-    1. As a User, i want to easily understand how to start the game.
+    1. As a User, I want to easily understand how to start the game.
         
         1. Once the site is loaded, a "Start" button in presented to the user.
     
-    1. As a User, i want to be able to restart the game at any giver moment.
+    1. As a User, I want to be able to restart the game at any giver moment.
         
         1. While playing, a "Restart" button is available to the user and it is located on the top right above the playing area. 
         2. The user can restart the game upon a loss or a victory by pressing the "Restart" available on both the Win and Game-Over screens. 
     
-    1. As a User, i want to have access to the time i have left to complete the game.
+    1. As a User, I want to have access to the time i have left to complete the game.
         
         1. The user has access to the time left to play. A timer is located on the top left the playing area.
     
-    1.  As a User, i want to have access to my score.
+    1.  As a User, I want to have access to my score.
         
         1. The user has access to the current score. The score counter is located on the top of the playing area.
     
-    1. As a User, i want to be able to mute/unmute the sound in the game.
+    1. As a User, I want to be able to mute/unmute the sound in the game.
         
         1. The user can mute/unmute the sound by pressing the "mute/unmute" button (shows "mute" if the sound is ON, shows "unmute" if the sound is OFF) located on the top right of the playing area.
 
